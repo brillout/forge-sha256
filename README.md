@@ -8,7 +8,7 @@ Code extracted from [forge's master on July 2015](https://github.com/digitalbaza
 
 #### Usage
 ```
-<script src='build/all.min.js'></script>
+<script src='build/forge-sha256.min.js'></script>
 <script>
 console.log(forge_sha256('abc'));
 // prints ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
