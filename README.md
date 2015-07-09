@@ -4,7 +4,7 @@ Reason to use this instead of the official forge build:
   
 Targets the browser.
 
-Code extracted from [forge's master on July 2015](https://github.com/digitalbazaar/forge/tree/3b7826f7c2735c42b41b7ceaaadaad570e92d898).
+Code at `forge/*` extracted from [forge's master on July 2015](https://github.com/digitalbazaar/forge/tree/3b7826f7c2735c42b41b7ceaaadaad570e92d898).
 
 #### Usage
 ```

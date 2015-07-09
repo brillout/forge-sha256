@@ -7,7 +7,7 @@ var util = forge.util = forge.util || {};
 
 
 /* ==================================================== */
-/* ========== copy of util-ByteStringBuffer.js ======== */
+/* ========== copy of forge/util-ByteStringBuffer.js == */
 /* ==================================================== */
 
 // define isArrayBuffer
@@ -611,7 +611,7 @@ util.ByteStringBuffer.prototype.toString = function() {
 
 
 /* ==================================================== */
-/* ========== copy of util-rest.js ==================== */
+/* ========== copy of forge/util-rest.js ============== */
 /* ==================================================== */
 
 /**
@@ -684,22 +684,7 @@ util.decodeUtf8 = function(str) {
 
 
 /* ==================================================== */
-/* ========== copy of hasWideChar.js ================== */
-/* ==================================================== */
-
-/* custom written function to determine if string is ASCII or UTF-8 */
-util.hasWideChar = function(str) {
-    for( var i = 0; i < str.length; i++ ){
-        if ( str.charCodeAt(i) >>> 8 ) return true;
-    }
-    return false;
-};
-
-
-
-
-/* ==================================================== */
-/* ========== copy of sha256.js ======================= */
+/* ========== copy of forge/sha256.js ================= */
 /* ==================================================== */
 
 var sha256 = forge.sha256 = forge.sha256 || {};
@@ -987,6 +972,21 @@ function _update(s, w, bytes) {
     len -= 64;
   }
 }
+
+
+
+
+/* ==================================================== */
+/* ========== copy of hasWideChar.js ================== */
+/* ==================================================== */
+
+/* custom written function to determine if string is ASCII or UTF-8 */
+util.hasWideChar = function(str) {
+    for( var i = 0; i < str.length; i++ ){
+        if ( str.charCodeAt(i) >>> 8 ) return true;
+    }
+    return false;
+};
 
 
 
