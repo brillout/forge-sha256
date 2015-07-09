@@ -1,0 +1,19 @@
+<script>
+if(typeof forge === 'undefined') {
+  forge = {};
+}
+var util = forge.util = forge.util || {};
+</script>
+<script src='util-ByteStringBuffer.js'></script>
+<script src='util-rest.js'></script>
+<script src='sha256.js'></script>
+<script>
+    var md = forge.md.sha256.create();
+    md.update('abc');
+    var hash = md.digest().toHex();
+    console.log(hash);
+    var md = forge.md.sha256.create();
+    md.update('abc', 'utf8');
+    var hash = md.digest().toHex();
+    console.log(hash);
+</script>
