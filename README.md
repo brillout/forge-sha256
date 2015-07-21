@@ -4,7 +4,7 @@ Reason to use this instead of the official forge build:
   
 Targets the browser.
 
-Code at `forge/*` extracted from [forge's master on July 2015](https://github.com/digitalbazaar/forge/tree/3b7826f7c2735c42b41b7ceaaadaad570e92d898).
+Code at `forge/*` extracted from [forge's master of July 2015](https://github.com/digitalbazaar/forge/tree/3b7826f7c2735c42b41b7ceaaadaad570e92d898).
 
 #### Usage
 ```
@@ -14,4 +14,4 @@ console.log(forge_sha256('abc'));
 // prints ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
 </script>
 ```
-`forge_sha256()` handles both ASCII and UTF-8 strings.
+`forge_sha256()` handles both ASCII and UTF-8 encoded text.
